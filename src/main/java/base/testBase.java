@@ -46,7 +46,7 @@ public class testBase {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to(prop.getProperty("url"));
+		driver.navigate().to("http://localhost:3000");
 
 
 
@@ -76,7 +76,6 @@ public class testBase {
 
 
 }
-
 
 
 

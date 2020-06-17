@@ -4,7 +4,5 @@ WORKDIR /app
 
 COPY . .
 
-#RUN sed -i 's/chromedriver = C:\/\/driver83\/\/chromedriver.exe/chromedriver =\/usr\/bin\/chromedriver/g' configs/properties
-#VOLUME  "./reports:/app/reports" 
 
 CMD mvn clean compile test-compile

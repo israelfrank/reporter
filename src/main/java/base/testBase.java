@@ -3,9 +3,7 @@ package base;
 import java.util.Properties;
 import java.io.*;
 
-import javax.xml.ws.Response;
 
-import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

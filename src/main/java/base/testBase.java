@@ -30,7 +30,7 @@ public class testBase {
 		prop = new Properties();
 		FileInputStream ip = new FileInputStream("./configs/properties");
 		prop.load(ip);
-		System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriver"));
+		System.setProperty("webdriver.chrome.driver", "/home/israel/Downloads/chromedriver_linux64/chromedriver");
 		ChromeOptions options = new ChromeOptions(); 
 		//		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 

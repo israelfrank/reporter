@@ -42,6 +42,7 @@ public class actionsMiddlePane extends testBase {
 
 	//a function that open new entity and give title and description
 	public void openEntity(String tit , String des) throws InterruptedException {
+		System.out.println("its work");
 
 		waitForVisibility(middlepane.pressCreateNewItem);
 		middlepane.pressCreateNewItem.click();
@@ -58,7 +59,6 @@ public class actionsMiddlePane extends testBase {
 		waitForVisibility(middlepane.pressOnEntity);
 		middlepane.pressOnEntity.click();
 		Thread.sleep(3000);
-		System.out.println("its work");
 	}
 
 	// a function that selects a favorite entity

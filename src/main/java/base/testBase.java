@@ -25,7 +25,7 @@ public class testBase {
 
 	public static void initialization() throws IOException  {
 
-		System.setProperty("webdriver.chrome.driver", "/home/israel/Downloads/chromedriver_linux64/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./chromedriver/chromedriver");
 		ChromeOptions options = new ChromeOptions(); 
 		//		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 
@@ -39,7 +39,7 @@ public class testBase {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to("http://localhost:3000");
+		driver.navigate().to("http://13.74.252.16:3000/tasks/my/activities");
 
 
 

@@ -47,9 +47,10 @@ public class documentsTest extends testBase {
 	
 		// press document tab
 		documentsmultipleselect.pressDocument();
-	  
+		System.out.println("its work");
+
 		//open doc  enter title and description
-		actionsmiddlepane.openEntity("doc1" , "importenet");
+		//actionsmiddlepane.openEntity("doc1" , "importenet");
 	}
 	
 //	@Test(priority = 2)

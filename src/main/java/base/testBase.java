@@ -1,6 +1,5 @@
 package base;
 
-import java.util.Properties;
 import java.io.*;
 
 
@@ -23,13 +22,9 @@ public class testBase {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentTest logger;
 	public static WebDriverWait wait;
-	public static Properties prop;
 
 	public static void initialization() throws IOException  {
 
-		prop = new Properties();
-		FileInputStream ip = new FileInputStream("./configs/properties");
-		prop.load(ip);
 		System.setProperty("webdriver.chrome.driver", "/home/israel/Downloads/chromedriver_linux64/chromedriver");
 		ChromeOptions options = new ChromeOptions(); 
 		//		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");

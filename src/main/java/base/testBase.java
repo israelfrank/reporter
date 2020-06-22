@@ -50,9 +50,9 @@ public class testBase {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/section/section/div/form/div[2]/input")));
 
-		driver.findElement(By.xpath("/html/body/section/section/div/form/div[2]/input")).sendKeys(prop.getProperty("email"));
+		driver.findElement(By.xpath("/html/body/section/section/div/form/div[2]/input")).sendKeys("isr123@gmail.com");
 
-		driver.findElement(By.xpath("/html/body/section/section/div/form/div[3]/input")).sendKeys(prop.getProperty("password"));
+		driver.findElement(By.xpath("/html/body/section/section/div/form/div[3]/input")).sendKeys("0533346872");
 
 		driver.findElement(By.className("btn")).click();
 

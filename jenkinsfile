@@ -2,25 +2,13 @@ pipeline {
     agent any
 
     stages {
-      stage('Build') {
-     	when {
-             expression{
-                 BRANCH_NAME == "master"
-             }
-        }    
+      
+      stage('build') {
+     	
             steps {
 		        mvn clean compile test-compile
             }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
+     
         }
     }
 }

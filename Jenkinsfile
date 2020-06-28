@@ -6,7 +6,7 @@ pipeline {
       stage('build') {
      	
             steps {
-		       mvn clean compile test-compile
+		           bat mvn clean compile test-compile
             
           }
         }

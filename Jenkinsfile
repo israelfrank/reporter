@@ -6,9 +6,9 @@ pipeline {
       stage('build') {
      	
             steps {
-		        mvn clean compile test-compile
+		       mvn clean compile test-compile
             }
-     
+          }
         }
     }
 }

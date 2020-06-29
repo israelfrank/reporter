@@ -31,6 +31,8 @@ public class testBase {
 
 		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 		driver 		 = new ChromeDriver(options);
+		System.out.println("its work");
+
 		//driver 		 = new ChromeDriver();
 		wait 		 = new WebDriverWait(driver, 30);
 		extent 		 = new ExtentReports();

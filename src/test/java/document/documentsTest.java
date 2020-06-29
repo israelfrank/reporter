@@ -46,7 +46,7 @@ public class documentsTest extends testBase {
 	public void openDoc() throws InterruptedException {
 	
 		// press document tab
-		documentsmultipleselect.pressDocument();
+		//documentsmultipleselect.pressDocument();
 		System.out.println("its work");
 
 		//open doc  enter title and description

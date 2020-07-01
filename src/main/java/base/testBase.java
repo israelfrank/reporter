@@ -41,7 +41,7 @@ public class testBase {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to("http://13.74.252.16:3000/tasks/my/activities");
+		driver.navigate().to("http://localhost:3000");
 
 
 

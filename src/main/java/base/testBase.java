@@ -25,7 +25,7 @@ public class testBase {
 
 	public static void initialization() throws IOException  {
 
-		System.setProperty("webdriver.chrome.driver", "./chromedriver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions(); 
 		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 

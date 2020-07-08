@@ -29,7 +29,7 @@ public class testBase {
 		ChromeOptions options = new ChromeOptions(); 
 		//		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 
-		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
+		//options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 		driver 		 = new ChromeDriver(options);
 		System.out.println("its work");
 

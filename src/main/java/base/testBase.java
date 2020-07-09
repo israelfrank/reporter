@@ -41,7 +41,7 @@ public class testBase {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to("http://localhost:3000");
+		driver.navigate().to("http://172.18.0.1:3000");
 
 
 
@@ -59,7 +59,7 @@ public class testBase {
 		driver.findElement(By.className("btn")).click();
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div/div[3]/button")));
-
+System.out.println("dasdsaasd");
 		Thread.sleep(2000);
 
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div[3]/button")).click();

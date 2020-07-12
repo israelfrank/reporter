@@ -42,7 +42,7 @@ public class testBase {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		System.out.println("checking");
-		driver.navigate().to("http://172.21.0.1:3000");
+		driver.navigate().to("http://172.22.0.1:3000");
 
 
 

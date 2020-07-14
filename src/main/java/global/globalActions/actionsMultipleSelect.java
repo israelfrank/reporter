@@ -71,13 +71,13 @@ public class actionsMultipleSelect extends testBase {
 		if (size - 1 == newSize) {
 			
 		System.out.println("logger");
-			logger.log(Status.PASS , "delete document using mulitiple choice");
+			logger.log(Status.PASS , "delete document using mulitiple choice kaki");
 			
 		}
 		
 		else {
 			
-			logger.log(Status.FAIL , "delete document using mulitiple choice");
+			logger.log(Status.FAIL , "delete document using mulitiple choice kaki");
 		}
 	
 	}

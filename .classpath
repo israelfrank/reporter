@@ -24,5 +24,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/israel/Downloads/extentreports-4.1.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

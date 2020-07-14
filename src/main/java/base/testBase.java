@@ -25,9 +25,9 @@ public class testBase {
 
 	public static void initialization() throws IOException  {
 
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./chromedriver/chromedriver");
 		ChromeOptions options = new ChromeOptions(); 
-		options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
+		//options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 
 		//options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--no-sandbox", "--disable-dev-shm-usage");
 		driver 		 = new ChromeDriver(options);
@@ -42,7 +42,7 @@ public class testBase {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		System.out.println("checking");
-		driver.navigate().to("http://172.22.0.1:3000");
+		driver.navigate().to("http://13.74.252.16:3000");
 
 
 
@@ -53,7 +53,7 @@ public class testBase {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/section/section/div/form/div[2]/input")));
 
-		driver.findElement(By.xpath("/html/body/section/section/div/form/div[2]/input")).sendKeys("y@gmail.com");
+		driver.findElement(By.xpath("/html/body/section/section/div/form/div[2]/input")).sendKeys("israel@gmail.com");
 
 		driver.findElement(By.xpath("/html/body/section/section/div/form/div[3]/input")).sendKeys("0533346872");
 

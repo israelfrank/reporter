@@ -46,19 +46,19 @@ public class documentsTest extends testBase {
 	public void openDoc() throws InterruptedException {
 	
 		// press document tab
-		//documentsmultipleselect.pressDocument();
+		documentsmultipleselect.pressDocument();
 		System.out.println("its work3");
 
 		//open doc  enter title and description
-		//actionsmiddlepane.openEntity("doc1" , "importenet");
+		actionsmiddlepane.openEntity("doc1" , "importenet");
 	}
 	
-//	@Test(priority = 2)
-//		public void documentsMultipleSelect() throws InterruptedException {
-//		
-//		logger = extent.createTest("multiple select");
-//		
-//		actionsmultipleselect.deleteEntityMultipleChoice();
+		@Test(priority = 2)
+		public void documentsMultipleSelect() throws InterruptedException {
+		
+		logger = extent.createTest("multiple select");
+		
+		actionsmultipleselect.deleteEntityMultipleChoice();
 //	
 //		actionsmultipleselect.addTagsMultipleChoice("mission");
 //
@@ -70,7 +70,7 @@ public class documentsTest extends testBase {
 //		
 //		actionsmultipleselect.addStatusMultipleChoice();
 //		
-//	}
+	}
 //	
 //	@Test(priority = 3)
 //	public void documentsMiddlePane() throws InterruptedException {

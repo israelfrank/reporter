@@ -6,6 +6,7 @@ COPY . .
 
 RUN  mvn compile test-compile
 
+VOLUME [ "/data" ]
 
 CMD mvn test 
 
